@@ -1,0 +1,39 @@
+.wrapper {
+  padding: 30px 30px 68px 30px;
+  background-color: var(--white);
+}
+
+.list {
+  display: grid;
+}
+
+.listItem {
+  padding: 25px 0;
+  border-bottom: 2px solid var(--border);
+}
+
+.listItemWrapper {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 10px 25px;
+}
+
+.picture {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+}
+
+.listItemTitle,
+.description,
+.subDescr {
+  grid-column: 2 / 3;
+}
+
+.description,
+.subDescr {
+  font-size: 13px;
+}
+
+.subDescr > span {
+  color: var(--span);
+}

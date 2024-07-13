@@ -1,0 +1,46 @@
+.footer {
+  background-color: var(--back-g);
+  color: var(--white);
+  padding: 48px 116px;
+  font-size: 14px;
+  display: grid;
+  grid-template-areas:
+    "r l ."
+    ". . lo"
+    "p a .";
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.rights {
+  grid-area: r;
+}
+
+.location {
+  grid-area: l;
+}
+
+.policy {
+  grid-area: p;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.address {
+  grid-area: a;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.logo {
+  grid-area: lo;
+  font-size: 48px;
+}
+
+.logo::before {
+  content: "";
+  border: 1px solid var(--brand);
+  margin-right: 16px;
+}

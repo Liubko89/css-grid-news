@@ -1,0 +1,5 @@
+.container {
+  max-width: 1440px;
+  background-color: var(--back-m);
+  margin: 0 auto;
+}

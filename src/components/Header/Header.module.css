@@ -1,0 +1,29 @@
+.header {
+  color: var(--white);
+  background-color: var(--back-g);
+  padding: 24px 48px;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  justify-items: end;
+  margin-bottom: 40px;
+}
+
+.logo {
+  justify-self: start;
+}
+
+.logo::before {
+  content: "";
+  border: 0.88px solid var(--brand);
+  margin-right: 10px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.link:first-child {
+  color: var(--brand);
+}
